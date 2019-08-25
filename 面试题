@@ -29,6 +29,7 @@ def quick_sort(alist):
   return alist
 
 二、二分查找
+1、递归版
 def bisec_find(alist, item):
   if len(alist) == 0:
     return False
@@ -41,10 +42,24 @@ def bisec_find(alist, item):
         return bisec_find(alist[:mid], item)
       else:
         return bisec_find(alist[mid+1:], item)
+        
+2、迭代版
+
 
 三、简要介绍一下SVM
 
 四、过拟合(overfitting)怎么解决？
+泛化(generalization) 训练集 测试集
+原因：噪声数据
 1、增大样本量（如果可以）
-2、正则化
-3、交叉验证
+2、Regularization(正则化)
+3、Cross Validation(交叉验证)
+4、Dropout(随机失活)
+在神经网络的训练过程中，神经元以超参数p的概率被激活(即1-p的概率被屏蔽)，其效果类似于集成学习中Bagging
+5、Batch Normalization(逐层归一化)
+每一层的输出都做归一化
+6、Early Stopping(提前终止)
+
+五、Logistic Regression的原理
+
+六、SVM和LR的异同
