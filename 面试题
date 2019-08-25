@@ -1,3 +1,11 @@
 1、快速排序
+def partition(alist, first, last):
+  n = len(alist)
+  pivot_value = alist[first]
+  left = first + 1
+  right = last
+  while left <= right:
+    if alist[left] > pivot_value and alist[right] < pivot_table:
+      alist[left], alist[right] = alist[right], alist[left]
 
 2、二分查找
