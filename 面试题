@@ -63,20 +63,26 @@ def bisec_find(alist, item):
 三、简要介绍一下SVM
 
 四、SVM中常用的核函数
+核函数将原来的输入空间映射到一个新的特征空间，在新的特征空间里从训练样本中学习线性支持向量机。
+当特征函数是非线性时，学习到的含有核函数的支持向量机就是非线性分类模型
+    1、线性核
+    2、多项式核
+    3、高斯核（径向基）
+    
 
 六、SVM和LR的异同
 
 四、过拟合(overfitting)怎么解决？
 泛化(generalization) 训练集 测试集
 原因：噪声数据
-  1、增大样本量（如果可以）
-  2、Regularization(正则化)
-  3、Cross Validation(交叉验证)
-  4、Dropout(随机失活)
-  在神经网络的训练过程中，神经元以超参数p的概率被激活(即1-p的概率被屏蔽)，其效果类似于集成学习中Bagging
-  5、Batch Normalization(逐层归一化)
-  每一层的输出都做归一化
-  6、Early Stopping(提前终止)
+    1、增大样本量（如果可以）
+    2、Regularization(正则化)
+    3、Cross Validation(交叉验证)
+    4、Dropout(随机失活)
+    在神经网络的训练过程中，神经元以超参数p的概率被激活(即1-p的概率被屏蔽)，其效果类似于集成学习中Bagging
+    5、Batch Normalization(逐层归一化)
+    每一层的输出都做归一化
+    6、Early Stopping(提前终止)
 
 五、Logistic Regression的原理
 
