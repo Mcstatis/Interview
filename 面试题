@@ -1,65 +1,83 @@
 一、快速排序
 def partition(alist, first, last):
-  n = len(alist)
-  pivot_value = alist[first]
-  left = first + 1
-  right = last
-  while left <= right:
-    if alist[left] > pivot_value and alist[right] < pivot_table:
-      alist[left], alist[right] = alist[right], alist[left]
-      left += 1
-      right -= 1
-    elif alist[left] < pivot_value:
-      left += 1
-    elif alist[right] > pivot_value:
-      right -= 1
-  alist[first], alist[right] = alist[right], alist[first]
-  return right
+    n = len(alist)
+    pivot_value = alist[first]
+    left = first + 1
+    right = last
+    while left <= right:
+        if alist[left] > pivot_value and alist[right] < pivot_table:
+            alist[left], alist[right] = alist[right], alist[left]
+            left += 1
+            right -= 1
+      elif alist[left] < pivot_value:
+          left += 1
+      elif alist[right] > pivot_value:
+          right -= 1
+    alist[first], alist[right] = alist[right], alist[first]
+    return right
   
 def quick_sort_helper(alist, first, last):
-  if first < last:
-    split_point = partition(alist, first, last)
-    quick_sort_heiper(alist, first, split_point-1)
-    quick_sort_heiper(alist, split_point+1, right)
+    if first < last:
+        split_point = partition(alist, first, last)
+        quick_sort_heiper(alist, first, split_point-1)
+        quick_sort_heiper(alist, split_point+1, right)
 
 def quick_sort(alist):
-  first = 0
-  last = len(alist) - 1
-  quick_sort_helper(alist, first, last)
-  return alist
+    first = 0
+    last = len(alist) - 1
+    quick_sort_helper(alist, first, last)
+    return alist
 
 二、二分查找
 1、递归版
 def bisec_find(alist, item):
-  if len(alist) == 0:
-    return False
-  else: 
-    mid = len(alist) // 2
-    if len(alist) > 1:
-      if alist[mid] == item:
-        return True
-      elif alist[mid] > item:
-        return bisec_find(alist[:mid], item)
-      else:
-        return bisec_find(alist[mid+1:], item)
+    if len(alist) == 0:
+        return False
+    else: 
+        mid = len(alist) // 2
+        if len(alist) > 1:
+            if alist[mid] == item:
+                return True
+            elif alist[mid] > item:
+                return bisec_find(alist[:mid], item)
+            else:
+                return bisec_find(alist[mid+1:], item)
         
 2、迭代版
+def bisec_find(alist, item):
+    n = len(alist)
+    left = 0
+    right = n - 1
+    while left < right:
+        mid = (left + right) // 2
+        if alist[mid] == item:
+            return True
+            break
+        elif alist[mid] > item:
+            right = mid - 1
+        else:
+            left = mid + 1
+    return False
 
 
 三、简要介绍一下SVM
 
+四、SVM中常用的核函数
+
+六、SVM和LR的异同
+
 四、过拟合(overfitting)怎么解决？
 泛化(generalization) 训练集 测试集
 原因：噪声数据
-1、增大样本量（如果可以）
-2、Regularization(正则化)
-3、Cross Validation(交叉验证)
-4、Dropout(随机失活)
-在神经网络的训练过程中，神经元以超参数p的概率被激活(即1-p的概率被屏蔽)，其效果类似于集成学习中Bagging
-5、Batch Normalization(逐层归一化)
-每一层的输出都做归一化
-6、Early Stopping(提前终止)
+  1、增大样本量（如果可以）
+  2、Regularization(正则化)
+  3、Cross Validation(交叉验证)
+  4、Dropout(随机失活)
+  在神经网络的训练过程中，神经元以超参数p的概率被激活(即1-p的概率被屏蔽)，其效果类似于集成学习中Bagging
+  5、Batch Normalization(逐层归一化)
+  每一层的输出都做归一化
+  6、Early Stopping(提前终止)
 
 五、Logistic Regression的原理
 
-六、SVM和LR的异同
+
