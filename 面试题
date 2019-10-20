@@ -141,5 +141,5 @@ XGBoost本质上还是GBDT，其优化主要体现在工程设计层面，包括
     4、多层次结构
 
 十三、LSTM结构推导？为什么比RNN好？
-    CNN → RNN → LSTM
+    CNN → RNN(梯度消失) → LSTM
     
