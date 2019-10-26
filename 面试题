@@ -190,4 +190,7 @@ https://blog.csdn.net/jifeihuiaoguai988/article/details/51378108  EM算法介绍
             缺：负数部分恒为0，导致神经元无法激活
         4）Batch Normalization（批量归一化）
         加速网络训练速度，提升训练稳定性
-            
+        5）残差结构
+        残差的跨层连接结构，即残差的捷径（shortcut）部分
+        6）LSTM
+        门控机制
