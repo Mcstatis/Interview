@@ -196,3 +196,16 @@ https://blog.csdn.net/jifeihuiaoguai988/article/details/51378108  EM算法介绍
         门控机制
 https://blog.csdn.net/qq_25737169/article/details/78847691
 https://blog.csdn.net/qq_25737169/article/details/79048516
+
+二十一、什么是卷积？
+    对图像的局部数据窗口和滤波矩阵做内积（对应位置元素相乘再相加）的操作即为卷积。
+
+二十二、什么是池化？
+    取区域内的平均或者最大
+    局部连接
+    
+二十三、简述下什么是生成对抗网络？
+    生成对抗网络（Generative Adversarial Network），其内部是竞争关系。有点类似“以子之矛，攻子之盾”在相爱相杀中共同成长。
+    一方是生成模型（Generative Model），另一方是判别模型（Discriminative Model）
+    生成模型的任务是生成一个实例来骗过判别模型，而判别模型的任务则是判断这个实例是来自训练样本（真实）还是生成模型（合成）。
+    双方相互对抗，最终达到一个平衡。
