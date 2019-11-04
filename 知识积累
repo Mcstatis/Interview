@@ -209,3 +209,11 @@ https://blog.csdn.net/qq_25737169/article/details/79048516
     一方是生成模型（Generative Model），另一方是判别模型（Discriminative Model）
     生成模型的任务是生成一个实例来骗过判别模型，而判别模型的任务则是判断这个实例是来自训练样本（真实）还是生成模型（合成）。
     双方相互对抗，最终达到一个平衡。
+
+二十四、HMM和CRF的区别
+    1、模式
+    HMM：生成式
+    CRF：判别式
+    2、是否先验
+    HMM：加入对状态概率的先验知识
+    CRF：完全是Data Driven
