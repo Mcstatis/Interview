@@ -223,4 +223,7 @@ https://blog.csdn.net/qq_25737169/article/details/79048516
     k-d树的构建是一个递归的过程。采用分而治之的思想，将整个空间划分几个小的空间。
     确定Split域：对于所有描述子数据（特征矢量），统计他在每个维度的方差，选取方差中的最大值，对应的就是split域。方差最大表示沿着这个
     坐标轴方向数据分散的比较开，这个方向进行分割能获得比较好的分辨率。
+    k-d树构建后，如何进行最近领搜索 https://img-my.csdn.net/uploads/201206/03/1338711447_6884.gif
+    
+    https://blog.csdn.net/v_july_v/article/details/8203674
     
