@@ -234,4 +234,5 @@ https://blog.csdn.net/qq_25737169/article/details/79048516
 二十七、PCA的主要步骤？
     
 二十八、LDA(Latent Dirichlet Allocation)和PLSA的区别
-    
+    在贝叶斯框架下的LDA，我们不再认为主题分布（文档中各个主题的出现概率）和词分布（主题中各个词语出现的概率分布）不是唯一确定的，而是随机变量
+    有点类似频率学派和贝叶斯学派的争议
