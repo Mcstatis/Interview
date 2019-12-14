@@ -77,6 +77,7 @@ def bisec_find(alist, item):
 泛化(generalization) 训练集 测试集
 原因：噪声数据
     1、增大样本量（如果可以）
+        Data Augmentation 数据扩增，图像识别中的平移、旋转和缩放
     2、Regularization(正则化)
     3、Cross Validation(交叉验证)
     4、Dropout(随机失活)
@@ -236,3 +237,8 @@ https://blog.csdn.net/qq_25737169/article/details/79048516
 二十八、LDA(Latent Dirichlet Allocation)和PLSA的区别
     在贝叶斯框架下的LDA，我们不再认为主题分布（文档中各个主题的出现概率）和词分布（主题中各个词语出现的概率分布）不是唯一确定的，而是随机变量
     有点类似频率学派和贝叶斯学派的争议
+
+二十九、为什么需要对数据进行归一化？
+    （1）有利于加速梯度下降法的收敛速度，对于使用梯度下降进行参数优化的算法
+    （2）涉及距离计算、模型中含有公式，量纲的存在会干扰参数估计的结果，最终体现的是特征的重要性
+    树形模型（概率模型）不需要归一化
