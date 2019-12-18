@@ -169,6 +169,7 @@ https://blog.csdn.net/jifeihuiaoguai988/article/details/51378108  EM算法介绍
     L2 正态分布
     
 十九、完整的机器学习项目的流程
+    误差分析/模型诊断
     
 二十、梯度消失和梯度爆炸
     2种情况，梯度消失经常出现
