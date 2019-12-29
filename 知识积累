@@ -256,5 +256,15 @@ https://blog.csdn.net/qq_25737169/article/details/79048516
 三十、深度（监督）学习在计算机视觉（CV）领域的进展
     1、图像分类（Image Classification）
     ImageNet大规模图像识别竞赛
-    CNN → ResNet（微软）
-    
+    各种CNN的变种：
+       AlexNet(2013 83.6%) → VGG(2014 92.7%) → GoogleNet(2014 93.3%) → ResNet（2015 96.43% 微软 识别正确率超过人类水平） 
+    2、图像/目标检测（Image/Object Detection）
+    图像检测是指在分类图像的同时把物体用矩形框圈定起来 Classification + Localization
+    先后涌现R-CNN(Region CNN) → Fast R-CNN() → Faster R-CNN() → YOLO → SSD
+    https://blog.csdn.net/v_JULY_v/article/details/80170182  一文读懂目标检测：R-CNN、Fast R-CNN、Faster R-CNN、YOLO、SSD
+    3、图像分割（Senmatic Segmentation）
+    图像分割是把图片中不同的物体用不同的颜色分割出来
+    4、图像标注-看图说话（Image Captioning）
+    根据一张图片，生成一段文字描述它
+    5、图像生成-文字转图片（Image Generator）
+    根据一段文字，生成对应的图片
