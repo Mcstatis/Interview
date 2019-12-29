@@ -268,3 +268,24 @@ https://blog.csdn.net/qq_25737169/article/details/79048516
     根据一张图片，生成一段文字描述它
     5、图像生成-文字转图片（Image Generator）
     根据一段文字，生成对应的图片
+
+三十一、深度学习中的调参经验
+    1、参数初始化
+    不进行初始化会减慢收敛速度，影响收敛结果，甚至会造成Nan等一系列问题
+    （1）uniform均匀分布初始化
+    （2）normal高斯分布初始化
+    （3）svd初始化 对RNN有比较好的效果
+    2、数据预处理
+    zero-center
+    3、梯度消失/爆炸
+    Clip Gradient梯度裁剪，限制最大梯度
+    替代激活函数Sigmoid → tanh → ReLU
+    梯度归一化
+    4、防止过拟合
+    Dropout
+    Batch Normalization
+    
+三十二、RNN、LSTM和GRU的区别
+    RNN：处理序列型数据，引入循环的概念，但是在实际过程中却出现初始信息随着时间消失的问题
+    LSTM：门控机制，非常适合记忆，解决梯度消失的问题
+    GRU：门控循环单元 Gated Recurrent Unit 更新门和重置门 LSTM的一种变体，将遗忘门和输入门合并成更新门
