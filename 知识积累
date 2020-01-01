@@ -330,3 +330,8 @@ https://blog.csdn.net/qq_25737169/article/details/79048516
     4、权重正则化（Weight Regularization）
     
 三十八、深度学习（CNN RNN Attention）解决大规模文本分类问题
+    1、传统文本分类方法
+    文本预处理：分词（研究表明，特征粒度为词远好于为字） 去停用词
+    2、现代分词
+    Word Embedding + Bi-LSTM + CRF逐渐成为主流
+    
