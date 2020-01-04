@@ -329,10 +329,14 @@ https://blog.csdn.net/qq_25737169/article/details/79048516
     3、梯度截断（Gradient Clipping）
     4、权重正则化（Weight Regularization）
     
-三十八、深度学习（CNN RNN Attention）解决大规模文本分类问题
+三十八、深度学习（CNN/RNN/Attention）解决大规模文本分类问题
     1、传统文本分类方法
+    人工特征工程 + 浅层分类模型
     文本预处理：分词（研究表明，特征粒度为词远好于为字，基于字粒度显然损失了过多的n-gram信息） 
                去停用词 维护一个停用词表
+    文本表示和特征处理
+    传统方法：词袋（BOW Bag of Word）或者向量空间模型（Vector Space Model）
+    缺陷：无法捕捉上下文关系，每个词之间彼此独立，且无法表征语义信息
     2、现代分词
     Word Embedding + Bi-LSTM + CRF逐渐成为主流
     
