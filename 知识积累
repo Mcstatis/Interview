@@ -9,10 +9,10 @@ def partition(alist, first, last):
             alist[left], alist[right] = alist[right], alist[left]
             left += 1
             right -= 1
-      elif alist[left] < pivot_value:
-          left += 1
-      elif alist[right] > pivot_value:
-          right -= 1
+        elif alist[left] < pivot_value:
+            left += 1
+        elif alist[right] > pivot_value:
+            right -= 1
     alist[first], alist[right] = alist[right], alist[first]
     return right
   
@@ -354,3 +354,9 @@ https://blog.csdn.net/qq_25737169/article/details/79048516
 三十九、对偶问题
     primal/dual 
     给出主问题最优解的下界
+
+四十、推荐系统技术演进趋势
+    经典的两阶段：多路召回(Retrieve/Match) + 统一排序(Rank)
+    召回强调快：少量特征 + 简单模型
+    排序强调准：丰富特征 + 复杂模型
+    
