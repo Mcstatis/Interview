@@ -309,6 +309,8 @@ https://blog.csdn.net/qq_25737169/article/details/79048516
         对于没有这样的局部相关性的数据集，不适于使用深度学习算法进行处理。
 
 三十五、准备机器学习面试，应该准备哪些理论知识？
+    https://www.zhihu.com/question/62482926  知乎问题：面试官如何判断面试者的机器学习水平？
+    其中，2个问题回答比较经典，王喆和知乎用户
     
 三十六、RNN的变体 N vs M
     这种结构又叫做Encoder-Decoder模型，也可以称之为Seq2seq模型
@@ -353,7 +355,8 @@ https://blog.csdn.net/qq_25737169/article/details/79048516
     
 三十九、对偶问题
     primal/dual 
-    给出主问题最优解的下界
+    给出原始问题（主问题）最优解的下界
+    对偶问题是凸优化问题，可以进行很好的求解@
 
 四十、推荐系统技术演进趋势
     经典的两阶段：多路召回(Retrieve/Match) + 统一排序(Rank)
@@ -403,3 +406,6 @@ https://blog.csdn.net/qq_25737169/article/details/79048516
     Learning  to Rank
     推荐系统里Learning to Rank做排序，我们常见有3种优化目标：Point-wise Pair-wise List-wise
     首先明确一点：List-wise并不是指某个/某类具体的模型，而是指模型的优化目标和损失函数的定义方式
+
+四十一、为什么引入非线性激活函数？
+    1、在线性激活函数下，多层网络和一层网络相当
