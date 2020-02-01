@@ -417,5 +417,49 @@ https://blog.csdn.net/qq_25737169/article/details/79048516
     2、后序（左 → 右 → 中）
     3、中序（左 → 中 → 右）
     4、层序（逐层访问，从左到右）
+    可以看出，是“中”的位置决定了命名
     https://blog.csdn.net/weixin_44523387/article/details/91313293
     https://www.cnblogs.com/fly-me/p/wei-ti-jiaoer-cha-shu-de-si-zhong-bian-li-fang-fa.html
+    
+    层序遍历的Python实现
+    class BinaryTree(object):
+        def __init__(self, parent=None, left=None, right=None):
+            self.parent = parent
+            self.left = left
+            self.right = right
+        
+    class LevelWise(object):
+        def __init__(self, root=None):
+            self.root = root
+        
+        def level_order(self):
+            """
+            Return:
+                result:list
+            """
+            if not self.root:
+                return []
+            stack = [self.root]
+            result = []
+            
+            while len(stack) > 0:
+                level = []
+                item = []
+                for i in stack:
+                    item.append(i.parent)
+                    if i.left:
+                        level.append(i.left)
+                    elif i.right:
+                        level.append(i.right)
+                stack = level
+                result.insert(0, item)
+            return result
+            
+        if __name == '__mian__':
+            node_1 = BinaryTree(parent=4)
+            node_2 = BinaryTree(parent=5)
+            node_3 = BinaryTree(parent=2)
+            node_4 = BinaryTree(parent=3, left=node_1, right=node_2)
+            root = BinaryTree(parent=1, left=node_3, right=node_4)
+            lw = LevelWise(root)
+            print("Level-wise enumerate for Binary tree:{}".format(lw.level_order()))
