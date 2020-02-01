@@ -463,3 +463,5 @@ https://blog.csdn.net/qq_25737169/article/details/79048516
         root = BinaryTree(parent=1, left=node_3, right=node_4)
         lw = LevelWise(root)
         print("Level-wise enumerate for Binary tree:{}".format(lw.level_order()))
+
+https://www.cnblogs.com/liutongqing/p/7698429.html
