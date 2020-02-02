@@ -421,7 +421,10 @@ https://blog.csdn.net/qq_25737169/article/details/79048516
     https://blog.csdn.net/weixin_44523387/article/details/91313293
     https://www.cnblogs.com/fly-me/p/wei-ti-jiaoer-cha-shu-de-si-zhong-bian-li-fang-fa.html
     
+    """
     层序遍历的Python实现
+    Desc: 自下而上 从左往右
+    """
     class BinaryTree(object):
         def __init__(self, parent=None, left=None, right=None):
             self.parent = parent
@@ -447,12 +450,12 @@ https://blog.csdn.net/qq_25737169/article/details/79048516
                 item = []
                 for i in stack:
                     item.append(i.parent)
-                    if i.left:
+                    if i.left:  # 从左往右的实现
                         level.append(i.left)
                     if i.right:  # 注意：这里elif和if的区别，重大失误啊
                         level.append(i.right)
                 stack = level
-                result.insert(0, item)
+                result.insert(0, item)  #  这里实现层序遍历的自下而上
             return result
 
     if __name == '__mian__':
