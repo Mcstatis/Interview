@@ -72,6 +72,7 @@ def bisec_find(alist, item):
 
 五、SVM和LR的异同
 
+
 六、过拟合(overfitting)怎么解决？
 其直观的表现如下：随着训练过程的进行，模型复杂度的增加，在训练集上的误差渐渐减小，但是在验证集上的误差反而增大
 泛化(generalization) 训练集 测试集
