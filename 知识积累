@@ -186,8 +186,8 @@ https://blog.csdn.net/jifeihuiaoguai988/article/details/51378108  EM算法介绍
     稳定性
     
 二十、梯度消失和梯度爆炸
-    2种情况，梯度消失经常出现
     1、梯度消失（Gradient Vanish）
+    2种情况，梯度消失经常出现
         1）深层网络中
         基于反向传播进行权值更新的过程中，根据链式法则进行连乘，如果激活函数求导值<1，随着层数的增加，求出的权重更新将以指数级衰减，即发生梯度消失
         2）采用不合适的损失函数
@@ -212,6 +212,15 @@ https://blog.csdn.net/jifeihuiaoguai988/article/details/51378108  EM算法介绍
         门控机制
 https://blog.csdn.net/qq_25737169/article/details/78847691
 https://blog.csdn.net/qq_25737169/article/details/79048516
+
+    4、如何解决神经网络中的梯度爆炸问题？
+        1、重新设计网络结构（优化）
+        层数更少/批尺寸更小
+        RNN → LSTM
+        2、选取新的激活函数
+        sigmoid/tanh → Relu
+        3、梯度截断（Gradient Clipping）
+        4、权重正则化（Weight Regularization）
 
 二十一、什么是卷积？
     对图像的局部数据窗口和滤波矩阵做内积（对应位置元素相乘再相加）的操作即为卷积。
@@ -335,14 +344,6 @@ https://blog.csdn.net/qq_25737169/article/details/79048516
     语音识别 输入语音信号，输出文本序列
     图像标注 看图说话
     
-三十七、如何解决神经网络中的梯度爆炸问题？
-    1、重新设计网络结构（优化）
-    层数更少/批尺寸更小
-    RNN → LSTM
-    2、选取新的激活函数
-    sigmoid/tanh → Relu
-    3、梯度截断（Gradient Clipping）
-    4、权重正则化（Weight Regularization）
     
 三十八、深度学习（CNN/RNN/Attention）解决大规模文本分类问题
     1、传统文本分类方法
