@@ -436,8 +436,9 @@ https://blog.csdn.net/qq_25737169/article/details/79048516
     https://www.cnblogs.com/fly-me/p/wei-ti-jiaoer-cha-shu-de-si-zhong-bian-li-fang-fa.html
     
     """
-    层序遍历的Python实现
+    层序遍历的Python实现（迭代版）
     Desc: 自下而上 从左往右
+    Note: 迭代版
     """
     class BinaryTree(object):
         def __init__(self, parent=None, left=None, right=None):
@@ -486,5 +487,4 @@ https://www.cnblogs.com/liutongqing/p/7698429.html
 四十三、神经网络中，激活函数ReLU为什么要好于sigmoid和tanh？
     1、采用sigmoid/tanh在反向传播计算误差梯度时，求导除法，涉及指数运算，计算量相当大
     2、对于深层网络，sigmoid在反向传播时，很容易出现梯度消失的情形（在接近饱和区域，导数区域0）
-    3、Relu会使一部分神经元的输出为0，这样就造成了网络的稀疏性，并且减少了参数的相互依存关系，缓解了过拟合问题的发生        
-
+    3、Relu会使一部分神经元的输出为0，这样就造成了网络的稀疏性，并且减少了参数的相互依存关系，缓解了过拟合问题的发生
