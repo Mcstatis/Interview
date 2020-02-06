@@ -524,3 +524,7 @@ https://www.cnblogs.com/liutongqing/p/7698429.html
         结论是，需要在树中找出全部比待删节点的值大的全部数。并在这些数中找出一个最小的数来。
         听起来非常拗，假设把它用图形来描写叙述的话，就是，从被删除的节点出发经过它的右节点。
         然后右节点最左边的叶子节点就是我们要找的，它有一个专业名词叫中序后继节点。
+    
+    BFS(Breadth First Search)和DFS(Deep First Search)
+    
+    
