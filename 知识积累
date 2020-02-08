@@ -526,5 +526,24 @@ https://www.cnblogs.com/liutongqing/p/7698429.html
         然后右节点最左边的叶子节点就是我们要找的，它有一个专业名词叫中序后继节点。
     
     BFS(Breadth First Search)和DFS(Deep First Search)
-    
-    
+    https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/
+        What are BFS and DFS for Binary Tree?
+        A Tree is typically traversed in two ways:
+
+        Breadth First Traversal (Or Level Order Traversal)
+        Depth First Traversals
+        Inorder Traversal (Left-Root-Right)
+        Preorder Traversal (Root-Left-Right)
+        Postorder Traversal (Left-Right-Root)
+              1
+             / \
+            2   3
+           / \
+          4   5
+          
+        BFS and DFSs of above Tree
+        Breadth First Traversal : 1 2 3 4 5
+        Depth First Traversals:
+              Preorder Traversal : 1 2 4 5 3 
+              Inorder Traversal  :  4 2 5 1 3 
+              Postorder Traversal : 4 5 2 3 1
