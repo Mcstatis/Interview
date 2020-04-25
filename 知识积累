@@ -569,4 +569,4 @@ https://www.cnblogs.com/liutongqing/p/7698429.html
     参考：https://blog.csdn.net/u011414200/article/details/50664266
     
 四十八、比较EM算法、HMM和CRF的区别
-    EM算法用于求解含有隐变量的极大似然估计
+    1、EM算法用于求解含有隐变量的极大似然估计或者极大后验估计
