@@ -568,3 +568,5 @@ https://www.cnblogs.com/liutongqing/p/7698429.html
     Borderline:DANGER 集中的样本代表少数类样本的边界（最容易被错分的样本）。然后对 DANGER 集使用 SMOTE 算法来在边界附近产生人工合成少数类样本
     参考：https://blog.csdn.net/u011414200/article/details/50664266
     
+四十八、比较EM算法、HMM和CRF的区别
+    EM算法用于求解含有隐变量的极大似然估计
