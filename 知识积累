@@ -570,3 +570,6 @@ https://www.cnblogs.com/liutongqing/p/7698429.html
     
 四十八、比较EM算法、HMM和CRF的区别
     1、EM算法用于求解含有隐变量的极大似然估计或者极大后验估计
+
+基于模型的协同过滤
+LFM 实际工程中，SVD会非常难，常采用梯度下降或者ALS的方法将矩阵分解成两个子矩阵的乘积
